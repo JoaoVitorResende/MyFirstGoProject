@@ -11,3 +11,9 @@ func SayNameSurnameAndAge() {
 	surname2 := "resende"
 	fmt.Println(name2, surname2)
 }
+
+func ReturnBoolean() bool{
+	var isThisAboolean = true;
+	return isThisAboolean
+}
+
