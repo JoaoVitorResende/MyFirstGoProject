@@ -3,12 +3,14 @@ package main
 import (
 	examplesfunctions "FirstProject/examplesFunctions"
 	examplesVariables "FirstProject/examplesVariables"
+	examplesArrays "FirstProject/examplesArrays"
 	"fmt"
 )
 
 func main() {
 	//functionsExamples()
-	variablesExamples()
+	//variablesExamples()
+	ArraysAndLoops()
 }
 
 func functionsExamples() {
@@ -27,4 +29,9 @@ func functionsExamples() {
 
 func variablesExamples(){
 	examplesVariables.SayNameSurnameAndAge()
+}
+
+func ArraysAndLoops(){
+	//examplesArrays.LoopsArray();
+	//examplesArrays.MemoryLoop();
 }
