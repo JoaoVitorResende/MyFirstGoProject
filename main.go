@@ -1,16 +1,18 @@
 package main
 
 import (
+	examplesArrays "FirstProject/examplesArrays"
+	examplesdefer "FirstProject/examplesDefer"
 	examplesfunctions "FirstProject/examplesFunctions"
 	examplesVariables "FirstProject/examplesVariables"
-	examplesArrays "FirstProject/examplesArrays"
 	"fmt"
 )
 
 func main() {
 	//functionsExamples()
 	//variablesExamples()
-	ArraysAndLoops()
+	//ArraysAndLoops()
+	DeferExamples()
 }
 
 func functionsExamples() {
@@ -27,11 +29,16 @@ func functionsExamples() {
 	fmt.Println(examplesfunctions.AddVariant(10, 10, 10))
 }
 
-func variablesExamples(){
+func variablesExamples() {
 	examplesVariables.SayNameSurnameAndAge()
 }
 
-func ArraysAndLoops(){
-	//examplesArrays.LoopsArray();
-	//examplesArrays.MemoryLoop();
+func ArraysAndLoops() {
+	examplesArrays.LoopsArray()
+	examplesArrays.MemoryLoop()
+}
+
+func DeferExamples() {
+	examplesdefer.DoDefer()
+	examplesdefer.DoDeferAnonimus()
 }

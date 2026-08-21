@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"math"
+	"time"
 )
 
 func BasicIf() {
@@ -24,4 +25,25 @@ func DifferentIf(){
 
 func ReturnError () error{
 	return errors.New("erro")
+}
+
+func SwitchStatement(x int){
+	switch x{
+	case 1:
+		fmt.Println(1)
+		//fallthrough caso queira que va para o de baixo
+	case 2:
+		fmt.Println(2)
+	default:
+		fmt.Println(x)
+	}
+}
+
+func IsWeekDay(x time.Time) bool{
+	switch{
+	case x.Weekday() > 0 && x.Weekday() < 6:
+		return false
+	default:
+		return true
+	}
 }
