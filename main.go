@@ -1,6 +1,7 @@
 package main
 
 import (
+	examplearraysandslices "FirstProject/exampleArraysAndSlices"
 	examplesArrays "FirstProject/examplesArrays"
 	examplesdefer "FirstProject/examplesDefer"
 	examplesfunctions "FirstProject/examplesFunctions"
@@ -12,7 +13,8 @@ func main() {
 	//functionsExamples()
 	//variablesExamples()
 	//ArraysAndLoops()
-	DeferExamples()
+	//DeferExamples()
+	SliceExamples()
 }
 
 func functionsExamples() {
@@ -41,4 +43,8 @@ func ArraysAndLoops() {
 func DeferExamples() {
 	examplesdefer.DoDefer()
 	examplesdefer.DoDeferAnonimus()
+}
+
+func SliceExamples(){
+	examplearraysandslices.GetResultFromApi();
 }
