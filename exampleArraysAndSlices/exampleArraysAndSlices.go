@@ -44,7 +44,7 @@ func GetResultFromApi() {
 
 	resultApi := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 
-	films := make([]string, 0, 10)
+	films := make([]string, 0, 10) // um exemplo que ocorreria ([]string, 2, 3) [0, 0, _] faria isso e nesse caso [fica tudo vazio com capacidade 10] um []
 
 	for _, id := range resultApi {
 		film := filmsDb[id]
@@ -66,4 +66,18 @@ func GetResultFromApiWithMatrix() {
 	}
 
 	fmt.Println(films)
+}
+
+func ChangeSliceMaxCapacity(){
+	arr := [5] int {1,2,3,4,5}
+	slice := arr[:2:2]
+	fmt.Println(slice, cap(slice))
+}
+
+func BoundsCheck(slice []int){
+	_ = slice[3] // analisa se vai ate aqui no caso 0,1,2,3 que seria o 4
+	fmt.Println(slice[0])
+	fmt.Println(slice[1])
+	fmt.Println(slice[2])
+	fmt.Println(slice[3])
 }
