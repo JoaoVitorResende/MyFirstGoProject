@@ -2,6 +2,7 @@ package main
 
 import (
 	examplearraysandslices "FirstProject/exampleArraysAndSlices"
+	examplemethodandstructs "FirstProject/exampleMethodAndStructs"
 	examplesArrays "FirstProject/examplesArrays"
 	examplesdefer "FirstProject/examplesDefer"
 	examplesfunctions "FirstProject/examplesFunctions"
@@ -14,7 +15,8 @@ func main() {
 	//variablesExamples()
 	//ArraysAndLoops()
 	//DeferExamples()
-	SliceExamples()
+	//SliceExamples()
+	structExample()
 }
 
 func functionsExamples() {
@@ -47,4 +49,9 @@ func DeferExamples() {
 
 func SliceExamples(){
 	examplearraysandslices.GetResultFromApi();
+}
+
+func structExample(){
+	examplemethodandstructs.MyFirstStruct()
+	//examplemethodandstructs.StructWithTag()
 }
