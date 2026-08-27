@@ -7,6 +7,7 @@ import (
 	examplesdefer "FirstProject/examplesDefer"
 	examplesfunctions "FirstProject/examplesFunctions"
 	examplesVariables "FirstProject/examplesVariables"
+	exampleinterfaces "FirstProject/exampleinterfaces"
 	"fmt"
 )
 
@@ -16,7 +17,8 @@ func main() {
 	//ArraysAndLoops()
 	//DeferExamples()
 	//SliceExamples()
-	structExample()
+	//structExample()
+	interfacesExamples()
 }
 
 func functionsExamples() {
@@ -54,4 +56,8 @@ func SliceExamples(){
 func structExample(){
 	examplemethodandstructs.MyFirstStruct()
 	//examplemethodandstructs.StructWithTag()
+}
+
+func interfacesExamples(){
+	exampleinterfaces.CallValidationAnimal()
 }
