@@ -2,12 +2,13 @@ package main
 
 import (
 	examplearraysandslices "FirstProject/exampleArraysAndSlices"
+	exampleerrors "FirstProject/exampleErrors"
 	examplemethodandstructs "FirstProject/exampleMethodAndStructs"
+	exampleinterfaces "FirstProject/exampleinterfaces"
 	examplesArrays "FirstProject/examplesArrays"
 	examplesdefer "FirstProject/examplesDefer"
 	examplesfunctions "FirstProject/examplesFunctions"
 	examplesVariables "FirstProject/examplesVariables"
-	exampleinterfaces "FirstProject/exampleinterfaces"
 	"fmt"
 )
 
@@ -18,7 +19,8 @@ func main() {
 	//DeferExamples()
 	//SliceExamples()
 	//structExample()
-	interfacesExamples()
+	//interfacesExamples()
+	errorsExample()
 }
 
 func functionsExamples() {
@@ -60,4 +62,19 @@ func structExample(){
 
 func interfacesExamples(){
 	exampleinterfaces.CallValidationAnimal()
+}
+
+func errorsExample(){
+	a := 10
+	b := 0
+	res, error := exampleerrors.Dividir(a,b)
+	fmt.Println(res, error)
+	//--
+	user,error := exampleerrors.NewUser(true)
+	if (error != nil){
+		fmt.Println("aconteceu algum erro")
+	}else{
+		user.SayUserName()
+	}
+	
 }
