@@ -75,13 +75,15 @@ func errorsExample(){
 		fmt.Println("aconteceu algum erro")
 	}else{
 		user.SayUserName()
-	}*/
+	}
 	//--
 	x:= -10.0
 	res, erro := exampleerrors.RaizQuadrada(x)
 	if erro != nil{
 		fmt.Println(erro)
 	}
-	fmt.Println(res)
-	
+	fmt.Println(res)*/
+	exampleerrors.FindTypeOfErrorIs()
+	exampleerrors.FinTypeOfErrorAs()
+	exampleerrors.ErrorWrapping()
 }

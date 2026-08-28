@@ -43,4 +43,53 @@ func RaizQuadrada(x float64) (float64, error) {
 	return math.Sqrt(x), nil
 }
 
+var errorNotFound = errors.New("not found")
 
+func returnNil() error{
+	return nil
+}
+
+func returnSqrError() error{
+	return SqrError{msg: "erro de sqr"}
+}
+
+func FindTypeOfErrorIs(){
+	err := returnNil()
+	if err != nil && errors.Is(err, errorNotFound){
+		fmt.Println(errorNotFound)
+		return
+	}
+	fmt.Println("erro desconhecido")
+}
+
+func FinTypeOfErrorAs(){
+
+	err := returnSqrError()
+	var sqrErrorV SqrError
+
+	if err != nil && errors.As(err, &sqrErrorV){
+		fmt.Println(sqrErrorV.msg)
+	}
+	fmt.Println("erro desconhecido")
+}
+
+func ErrorWrapping(){
+	err:= findTypeError()
+	if err != nil && errors.Is(err, anyError){
+		 fmt.Println("deu erro:", err)
+	}
+}
+
+func findTypeError() error{
+	err:= bar()
+	if err != nil{
+		return fmt.Errorf("findTypeError %w ", err)
+	}
+	return nil
+}
+
+var anyError = errors.New("error")
+
+func bar() error{
+	return anyError
+}
