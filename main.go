@@ -65,7 +65,7 @@ func interfacesExamples(){
 }
 
 func errorsExample(){
-	a := 10
+	/*a := 10
 	b := 0
 	res, error := exampleerrors.Dividir(a,b)
 	fmt.Println(res, error)
@@ -75,6 +75,13 @@ func errorsExample(){
 		fmt.Println("aconteceu algum erro")
 	}else{
 		user.SayUserName()
+	}*/
+	//--
+	x:= -10.0
+	res, erro := exampleerrors.RaizQuadrada(x)
+	if erro != nil{
+		fmt.Println(erro)
 	}
+	fmt.Println(res)
 	
 }
