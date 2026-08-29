@@ -4,6 +4,7 @@ import (
 	examplearraysandslices "FirstProject/exampleArraysAndSlices"
 	exampleerrors "FirstProject/exampleErrors"
 	examplemethodandstructs "FirstProject/exampleMethodAndStructs"
+	"FirstProject/exampleReaderAndWriters"
 	exampleinterfaces "FirstProject/exampleinterfaces"
 	examplesArrays "FirstProject/examplesArrays"
 	examplesdefer "FirstProject/examplesDefer"
@@ -20,7 +21,8 @@ func main() {
 	//SliceExamples()
 	//structExample()
 	//interfacesExamples()
-	errorsExample()
+	//errorsExample()
+	exampleReadAndWrite()
 }
 
 func functionsExamples() {
@@ -86,4 +88,11 @@ func errorsExample(){
 	exampleerrors.FindTypeOfErrorIs()
 	exampleerrors.FinTypeOfErrorAs()
 	exampleerrors.ErrorWrapping()
+}
+
+func exampleReadAndWrite(){
+	//exampleReaderAndWriters.FirstExample()
+	//exampleReaderAndWriters.ReadThStringTillEnd()
+	//exampleReaderAndWriters.ReadAndWrite()
+	exampleReaderAndWriters.ReadFull()
 }
