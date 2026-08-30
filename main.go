@@ -3,6 +3,7 @@ package main
 import (
 	examplearraysandslices "FirstProject/exampleArraysAndSlices"
 	exampleerrors "FirstProject/exampleErrors"
+	examplegoruntime "FirstProject/exampleGoRunTime"
 	examplemethodandstructs "FirstProject/exampleMethodAndStructs"
 	"FirstProject/exampleParametersGenerics"
 	"FirstProject/exampleReaderAndWriters"
@@ -24,7 +25,8 @@ func main() {
 	//interfacesExamples()
 	//errorsExample()
 	//exampleReadAndWrite()
-	exampleParamsGeneric()
+	//exampleParamsGeneric()
+	exampleGoRunTimeFunctions()
 }
 
 func functionsExamples() {
@@ -101,4 +103,9 @@ func exampleReadAndWrite(){
 
 func exampleParamsGeneric(){
 	exampleParametersGenerics.FirstExample()
+}
+
+func exampleGoRunTimeFunctions(){
+	//examplegoruntime.FirtAsyncExample()
+	examplegoruntime.WorkingAsync()
 }
