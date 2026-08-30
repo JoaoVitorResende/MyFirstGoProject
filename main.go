@@ -4,6 +4,7 @@ import (
 	examplearraysandslices "FirstProject/exampleArraysAndSlices"
 	exampleerrors "FirstProject/exampleErrors"
 	examplemethodandstructs "FirstProject/exampleMethodAndStructs"
+	"FirstProject/exampleParametersGenerics"
 	"FirstProject/exampleReaderAndWriters"
 	exampleinterfaces "FirstProject/exampleinterfaces"
 	examplesArrays "FirstProject/examplesArrays"
@@ -22,7 +23,8 @@ func main() {
 	//structExample()
 	//interfacesExamples()
 	//errorsExample()
-	exampleReadAndWrite()
+	//exampleReadAndWrite()
+	exampleParamsGeneric()
 }
 
 func functionsExamples() {
@@ -95,4 +97,8 @@ func exampleReadAndWrite(){
 	//exampleReaderAndWriters.ReadThStringTillEnd()
 	//exampleReaderAndWriters.ReadAndWrite()
 	exampleReaderAndWriters.ReadFull()
+}
+
+func exampleParamsGeneric(){
+	exampleParametersGenerics.FirstExample()
 }
