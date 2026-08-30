@@ -107,5 +107,6 @@ func exampleParamsGeneric(){
 
 func exampleGoRunTimeFunctions(){
 	//examplegoruntime.FirtAsyncExample()
-	examplegoruntime.WorkingAsync()
+	//examplegoruntime.WorkingAsync()
+	examplegoruntime.WorkingAsyncContext()//vai aguardar 0 5seg do timeout ou 10 seg do servidor
 }
